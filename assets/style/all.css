@@ -1,23 +1,763 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  vertical-align: middle; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  Max-width: 1296px;
+  text-align: center;
+  margin: 0 auto; }
+
+a {
+  display: block; }
+
+.navbar {
+  background-color: #AA0601; }
+
+.navcontainer {
+  Max-width: 1296px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .navcontainer img {
+    width: 80px;
+    height: 48px;
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .navcontainer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .navcontainer ul li {
+      padding-left: 64px;
+      font-size: 20px;
+      line-height: 30px; }
+      .navcontainer ul li a {
+        color: #FFFFFF;
+        text-decoration: none; }
+        .navcontainer ul li a:hover {
+          color: blue; }
+
+.footer {
+  background-color: #AA0601;
+  max-width: 100%; }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px; }
+  .list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.text li {
+  padding-right: 48px; }
+  .text li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px; }
+    .text li a:hover {
+      color: blue; }
+
+.icon li:nth-child(2) {
+  padding-left: 32px;
+  padding-right: 32px; }
+
+.icon li a img:hover {
+  border-radius: 10px;
+  background-color: blue; }
+
+.list img {
+  width: 48px;
+  height: 48px; }
+
+.contact {
+  padding-top: 24px;
+  font-size: 36px;
+  line-height: 54px; }
+  .contact ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contact ul li img:nth-child(1) {
+      margin-right: 22px;
+      width: 36px;
+      height: 36px; }
+    .contact ul li img:nth-child(2) {
+      margin-right: 22px;
+      width: 40px;
+      height: 32px; }
+    .contact ul li:nth-child(1) {
+      padding-bottom: 8px; }
+    .contact ul li:nth-child(2) {
+      padding-bottom: 32px;
+      border-bottom: 1px solid #FFFFFF; }
+    .contact ul li a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      .contact ul li a:hover {
+        color: blue; }
+
+.policy {
+  padding: 32px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .policy p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px; }
+  .policy ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .policy ul li:nth-child(1) {
+      padding-right: 48px; }
+    .policy ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 21px; }
+      .policy ul li a:hover {
+        color: blue; }
+
+@media (max-width: 1326px) {
+  .container {
+    padding: 0 15px; }
+  .navbar {
+    padding: 0 15px; } }
+
+@media (max-width: 992px) {
+  .list {
+    padding-left: 36px;
+    padding-right: 36px; }
+    .list img {
+      width: 40px;
+      height: 40px; }
+  .policy {
+    padding-bottom: 40px; } }
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0px; }
+    .navbar div {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .navbar img {
+      margin: 12px 0; }
+    .navbar ul {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .navbar ul li {
+        padding: 12px 0px;
+        width: 48%;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        border: 1px solid #FFFFFF;
+        text-align: center; }
+  .navcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .container {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .phonelist {
+    padding-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    margin-left: 13px;
+    margin-right: 14px; }
+  .list {
+    padding-top: 0;
+    padding-right: 0; }
+    .list ul:nth-child(1) {
+      display: none; }
+  .icon img {
+    width: 24px;
+    height: 24px; }
+  .icon li:nth-child(2) {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .contact {
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px; }
+    .contact ul li img:nth-child(1) {
+      width: 18px;
+      height: 18px; }
+    .contact ul li img:nth-child(2) {
+      width: 20px;
+      height: 16px; }
+    .contact ul li:nth-child(2) {
+      border: 0;
+      padding-bottom: 20px; }
+  .policy {
+    border-top: 1px solid #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 13px;
+    padding-bottom: 24px; }
+    .policy ul {
+      display: block;
+      padding-top: 8px; }
+      .policy ul li {
+        padding-bottom: 8px; }
+        .policy ul li a {
+          font-size: 16px;
+          line-height: 24px; } }
+
+.container {
+  Max-width: 1296px;
+  text-align: center;
+  margin: 0 auto; }
+
+a {
+  display: block; }
+
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  height: 787px; }
+
+.bannertext {
+  Max-width: 1296px;
+  margin: 0 auto;
+  padding-top: 296px;
+  text-align: right;
+  color: #650300; }
+  .bannertext h3 {
+    font-size: 36px;
+    line-height: 54px; }
+  .bannertext h2 {
+    font-size: 64px;
+    line-height: 92px;
+    padding-bottom: 4px;
+    font-weight: bold; }
+  .bannertext button {
+    width: 104px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #AA0601;
+    color: #FFFFFF; }
+    .bannertext button a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .bannertext button a:hover {
+        color: blue; }
+
+.about {
+  background-color: #FBF2F2; }
+  .about h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #650300;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 24px; }
+  .about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 80px; }
+    .about ul li {
+      text-align: center; }
+      .about ul li img {
+        width: 100px;
+        height: 100px; }
+      .about ul li h5 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        color: #650300; }
+      .about ul li p {
+        font-style: 16px;
+        line-height: 24px;
+        margin-right: 24px;
+        text-align: left; }
+
+.classic h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  color: #650300;
+  padding-top: 80px;
+  padding-bottom: 48px;
+  text-align: center; }
+
+.classic img {
+  width: 100%; }
+
+.classic ul {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px; }
+  .classic ul li {
+    width: 30%; }
+    .classic ul li:nth-child(2) {
+      margin: 0 24px; }
+    .classic ul li h3 {
+      text-align: center;
+      font-size: 48px;
+      line-height: 72px;
+      color: #AA0601;
+      font-style: italic;
+      font-weight: 900;
+      font-family: Roboto;
+      padding-top: 8px; }
+
+.design {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 80px; }
+  .design h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 48px; }
+  .design img {
+    width: 100%; }
+  .design ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 80px; }
+    .design ul li h3 {
+      text-align: center;
+      font-size: 48px;
+      line-height: 72px;
+      color: #AA0601;
+      background-color: #FFFFFF;
+      font-style: italic;
+      font-weight: 900; }
+
+.customer {
+  text-align: center; }
+  .customer h2 {
+    font-size: 48px;
+    line-height: 72px;
+    color: #650300;
+    font-weight: bold;
+    padding-bottom: 48px; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px; }
+  .card div {
+    width: 90%;
+    padding: 16px;
+    text-align: left; }
+  .card img {
+    width: 100%; }
+  .card li {
+    padding-right: 24px; }
+    .card li p {
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 8px;
+      padding-bottom: 72px; }
+    .card li span {
+      padding-top: 72px;
+      padding-bottom: 16px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #707070; }
+
+.contactUs {
+  background-color: #FBF2F2;
+  text-align: center; }
+  .contactUs h2 {
+    padding-top: 80px;
+    padding-bottom: 48px;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    color: #650300; }
+
+.form-group {
+  padding-bottom: 16px; }
+  .form-group p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px; }
+  .form-group label {
+    display: block;
+    text-align: left;
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px; }
+  .form-group input {
+    width: 100%; }
+  .form-group textarea {
+    width: 100%;
+    height: 136px; }
+  .form-group :-moz-placeholder-shown {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; }
+  .form-group :-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; }
+  .form-group :placeholder-shown {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; }
+  .form-group:nth-child(6) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 48px; }
+  .form-group:nth-child(6) input {
+    width: 24px; }
+
+.submit {
+  padding-bottom: 80px; }
+  .submit button {
+    background-color: #AA0601; }
+  .submit a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 176px; }
+    .submit a:hover {
+      color: blue; }
+
+@media (max-width: 1326px) {
+  .container {
+    padding: 0 15px; }
+  .bannertext {
+    padding: 0 15px;
+    padding-top: 296px; } }
+
+@media (max-width: 992px) {
+  .bannertext {
+    padding-top: 296px;
+    padding-right: 15px; }
+  .about ul {
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .about ul li {
+      width: 50%; }
+  .classic ul {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .classic ul li {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 24px; }
+  .design {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true); }
+    .design ul {
+      max-width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-bottom: 56px; }
+    .design li {
+      width: 100%;
+      padding-bottom: 24px; }
+  .card {
+    padding-bottom: 80px;
+    Max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .card li {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      width: 46%; }
+  .form-group {
+    padding-left: 96px;
+    padding-right: 96px; }
+    .form-group p {
+      font-size: 16px;
+      line-height: 24px; }
+  .submit button a {
+    padding: 16px 136px; } }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    height: 396px; }
+  .bannertext {
+    padding-top: 144px;
+    padding-right: 14px; }
+    .bannertext h3 {
+      font-size: 16px;
+      line-height: 24px; }
+    .bannertext h2 {
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 8px; }
+  .about h2 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px; }
+  .about ul {
+    padding: 0 14px; }
+    .about ul li {
+      width: 100%;
+      padding-bottom: 24px; }
+  .classic h2 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 0px; }
+  .classic ul {
+    padding: 24px 14px 16px 14px; }
+    .classic ul li {
+      padding-bottom: 24px; }
+      .classic ul li:nth-child(2) {
+        padding: 0;
+        padding-bottom: 24px; }
+  .design h2 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 24px; }
+  .design ul {
+    padding: 0 14px; }
+  .customer h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .card li {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 16px; }
+  .form-group {
+    padding-left: 14px;
+    padding-right: 14px; }
+    .form-group:nth-child(6) {
+      padding-bottom: 24px; }
+  .contactUs h2 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 24px; }
+  .submit {
+    padding-bottom: 40px; }
+    .submit button a {
+      padding: 16px 142px; } }
 
 /*# sourceMappingURL=all.css.map */
