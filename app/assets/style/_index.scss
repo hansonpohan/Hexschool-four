@@ -195,32 +195,36 @@ a {
     display: flex;
     padding-bottom: 80px;
 
-    div {
-        width: 90%;
-        padding: 16px;
-        text-align: left;
-    }
-
-    img {
-        width: 100%;
-    }
 
     li {
-        padding-right: 24px;
+        div {
+            padding: 16px;
+            text-align: left;
 
-        p {
-            font-size: 16px;
-            line-height: 24px;
-            padding-top: 8px;
-            padding-bottom: 72px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 8px;
+                padding-bottom: 72px;
+            }
+
+            span {
+                padding-top: 72px;
+                padding-bottom: 16px;
+                font-size: 14px;
+                line-height: 21px;
+                color: #707070;
+            }
         }
 
-        span {
-            padding-top: 72px;
-            padding-bottom: 16px;
-            font-size: 14px;
-            line-height: 21px;
-            color: #707070;
+        img {
+            width: 100%;
+        }
+
+        padding-right: 24px;
+
+        &:nth-child(4) {
+            padding-right: 0px;
         }
     }
 }
@@ -366,21 +370,38 @@ a {
         li {
             flex-grow: 1;
             width: 46%;
+
+            &:nth-child(1) {
+                padding-right: 24px;
+            }
+
+            &:nth-child(2) {
+                padding-left: 12px;
+                padding-right: 0px;
+            }
+
+            &:nth-child(3) {
+                padding-right: 24px;
+            }
+
+            &:nth-child(4) {
+                padding-left: 12px;
+            }
         }
-    }
 
-    .form-group {
-        padding-left: 96px;
-        padding-right: 96px;
+        .form-group {
+            padding-left: 96px;
+            padding-right: 96px;
 
-        p {
-            font-size: 16px;
-            line-height: 24px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
-    }
 
-    .submit button a {
-        padding: 16px 136px;
+        .submit button a {
+            padding: 16px 136px;
+        }
     }
 }
 
@@ -444,7 +465,6 @@ a {
                 padding-bottom: 24px;
             }
         }
-
     }
 
     .design h2 {
@@ -465,8 +485,23 @@ a {
 
     .card li {
         width: 100%;
-        padding-left: 14px;
-        padding-right: 14px;
+
+        &:nth-child(1) {
+            padding: 0 15px;
+        }
+
+        &:nth-child(2) {
+            padding: 0 15px;
+        }
+
+        &:nth-child(3) {
+            padding: 0 15px;
+        }
+
+        &:nth-child(4) {
+            padding: 0 15px;
+        }
+
         padding-bottom: 16px;
     }
 
@@ -493,5 +528,4 @@ a {
             padding: 16px 142px;
         }
     }
-
 }
