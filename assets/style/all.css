@@ -392,14 +392,6 @@ a {
           font-size: 16px;
           line-height: 24px; } }
 
-.container {
-  Max-width: 1296px;
-  text-align: center;
-  margin: 0 auto; }
-
-a {
-  display: block; }
-
 .banner {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
   background-position: center;
@@ -777,14 +769,13 @@ a {
       padding: 16px 142px; } }
 
 .container {
-  Max-width: 1296px;
-  margin: 0 auto;
   text-align: left;
   padding-bottom: 32px; }
   .container h1 {
     padding-top: 96px;
     font-size: 48px;
-    line-height: 72px; }
+    line-height: 72px;
+    font-weight: bold; }
     .container h1::before {
       padding-left: 16px;
       content: "";
@@ -792,7 +783,13 @@ a {
 
 .select {
   padding-top: 32px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .select label {
     padding-top: 1px;
     font-size: 24px;
@@ -830,10 +827,17 @@ a {
     .location li .info {
       border: 1px solid #00000020;
       padding: 16px 0; }
+      .location li .info span {
+        padding-top: 3px;
+        padding-left: 27px;
+        padding-right: 11px; }
       .location li .info p {
-        padding-left: 56px;
         font-size: 20px;
-        line-height: 30px; }
+        line-height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-right: 24px; }
         .location li .info p:nth-child(2) {
           padding-top: 8px;
           padding-bottom: 8px; }
@@ -854,6 +858,17 @@ a {
     width: 50%; } }
 
 @media (max-width: 767px) {
+  .container h1 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 40px; }
+  .select {
+    padding-top: 24px; }
+    .select label {
+      font-size: 16px;
+      line-height: 24px; }
+    .select select {
+      width: 276px; }
   .location li {
     width: 100%; } }
 
@@ -866,7 +881,8 @@ a {
   .store2_container h1 {
     padding-top: 96px;
     font-size: 48px;
-    line-height: 72px; }
+    line-height: 72px;
+    font-weight: bold; }
     .store2_container h1::before {
       padding-left: 16px;
       content: "";
@@ -874,7 +890,13 @@ a {
 
 .select_store {
   padding-top: 32px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .select_store label {
     padding-top: 1px;
     font-size: 24px;
@@ -912,10 +934,17 @@ a {
       border: 1px solid #00000020; }
     .taipei_location li .store_info {
       border: 1px solid #00000020; }
+      .taipei_location li .store_info span {
+        padding-top: 3px;
+        padding-left: 27px;
+        padding-right: 11px; }
       .taipei_location li .store_info p {
-        padding-left: 56px;
         font-size: 20px;
-        line-height: 30px; }
+        line-height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-right: 24px; }
         .taipei_location li .store_info p:nth-child(2) {
           padding-top: 8px;
           padding-bottom: 8px; }
@@ -947,7 +976,16 @@ a {
 
 @media (max-width: 767px) {
   .store2_container h1 {
-    padding-top: 40px; }
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 36px; }
+  .select {
+    padding-top: 24px; }
+  .select_store label {
+    font-size: 16px;
+    line-height: 24px; }
+  .select_store select {
+    width: 276px; }
   .taipei_location {
     padding-bottom: 0px; }
     .taipei_location li {
@@ -958,5 +996,50 @@ a {
         .taipei_location li:nth-child(1) img {
           padding: 0px;
           width: 100%; } }
+
+.question_container {
+  Max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 36px;
+  padding-bottom: 80px; }
+  .question_container h1 {
+    padding-top: 96px;
+    padding-bottom: 32px;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+    font-weight: bold; }
+    .question_container h1::before {
+      padding-left: 16px;
+      content: "";
+      border-left: 5px solid #9F1213; }
+  .question_container h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold; }
+  .question_container .question {
+    padding-top: 32px; }
+    .question_container .question:nth-child(1) {
+      padding-top: 24px; }
+    .question_container .question h4 {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 8px;
+      font-weight: bold; }
+    .question_container .question p {
+      font-size: 16px;
+      line-height: 24px; }
+
+@media (max-width: 767px) {
+  .question_container {
+    padding: 0 15px;
+    padding-bottom: 64px; }
+    .question_container h1 {
+      font-size: 24px;
+      line-height: 36px;
+      padding-top: 40px;
+      padding-bottom: 24px; }
+  .question {
+    padding-top: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
