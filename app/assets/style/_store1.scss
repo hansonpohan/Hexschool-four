@@ -1,12 +1,11 @@
 .container {
-    Max-width: 1296px;
-    margin: 0 auto;
     text-align: left;
 
     h1 {
         padding-top: 96px;
         font-size: 48px;
         line-height: 72px;
+        font-weight: bold;
 
         &::before {
             padding-left: 16px;
@@ -21,6 +20,8 @@
 .select {
     padding-top: 32px;
     padding-bottom: 40px;
+    display: flex;
+    align-items: center;
 
     label {
         padding-top: 1px;
@@ -69,10 +70,17 @@
             border: 1px solid #00000020;
             padding: 16px 0;
 
+            span {
+                padding-top: 3px;
+                padding-left: 27px;
+                padding-right: 11px;
+            }
+
             p {
-                padding-left: 56px;
                 font-size: 20px;
                 line-height: 30px;
+                display: flex;
+                padding-right: 24px;
 
                 &:nth-child(2) {
                     padding-top: 8px;
@@ -109,6 +117,27 @@
 }
 
 @media (max-width: 767px) {
+    .container {
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 40px;
+        }
+    }
+
+    .select {
+        padding-top: 24px;
+
+        label {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        select {
+            width: 276px;
+        }
+    }
+
     .location {
 
         li {
