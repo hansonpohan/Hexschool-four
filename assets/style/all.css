@@ -768,15 +768,353 @@ a {
     .submit button a {
       padding: 16px 142px; } }
 
+.product_container {
+  Max-width: 1296px;
+  text-align: center;
+  margin: 0 auto; }
+  .product_container .function {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product_container .function h2 {
+      font-size: 32px;
+      line-height: 48px;
+      border-left: 1px solid #DCDCDC;
+      border-right: 1px solid #DCDCDC;
+      width: 100%; }
+      .product_container .function h2:nth-child(1) a {
+        border-bottom: 8px solid #AA0601; }
+      .product_container .function h2 a {
+        padding: 24px 0;
+        color: #000000;
+        display: block; }
+        .product_container .function h2 a:hover {
+          background-color: #AA0601;
+          border-bottom: 8px solid #AA0601; }
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px; }
+
+.picture1 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 296px; }
+
+.picture2 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 296px; }
+
+.product {
+  text-align: center; }
+  .product h2 {
+    font-size: 42px;
+    line-height: 63px; }
+  .product h3 {
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 32px; }
+  .product .glasses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .product .glasses li {
+      width: 25%;
+      padding: 0 12px;
+      padding-bottom: 80px; }
+      .product .glasses li img {
+        width: 100%; }
+      .product .glasses li .productInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .product .glasses li .productInfo p {
+          font-size: 24px;
+          line-height: 36px; }
+          .product .glasses li .productInfo p:nth-child(2) {
+            color: #AA0601; }
+      .product .glasses li .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .product .glasses li .color1 {
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px;
+        margin-right: 8px; }
+      .product .glasses li .color2 {
+        width: 24px;
+        height: 24px;
+        background-color: #B75929;
+        border-radius: 4px; }
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px; }
+  .page p {
+    border: 1px solid #555555; }
+    .page p:nth-child(1) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .page p:nth-child(3) {
+      background-color: #000000; }
+      .page p:nth-child(3) a {
+        color: #FFFFFF; }
+    .page p:nth-child(7) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .page p a {
+      display: block;
+      color: #555555;
+      padding: 12px 16px;
+      font-size: 18px;
+      line-height: 24px; }
+      .page p a:hover {
+        background-color: #000000;
+        color: #FFFFFF; }
+
+@media (max-width: 992px) {
+  .product_container .function h2 a {
+    padding: 16px 0; }
+  .product .glasses {
+    padding: 0 24px; }
+    .product .glasses li {
+      padding-bottom: 40px;
+      width: 50%; }
+  .page {
+    padding-top: 40px; } }
+
+@media (max-width: 767px) {
+  .product_container .function h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .product_container .function h3 {
+    font-size: 24px;
+    line-height: 36px; }
+  .picture {
+    padding-bottom: 40px; }
+  .picture1 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true); }
+  .picture2 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true); }
+  .product h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .product h3 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 24px; }
+  .product .glasses {
+    padding: 0; }
+    .product .glasses li {
+      padding-bottom: 24px;
+      width: 100%; }
+  .page {
+    padding-bottom: 64px; }
+    .page p {
+      font-size: 16px;
+      line-height: 22px; } }
+
+.product2_container {
+  Max-width: 1296px;
+  text-align: center;
+  margin: 0 auto; }
+  .product2_container .function2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product2_container .function2 h2 {
+      font-size: 32px;
+      line-height: 48px;
+      border-left: 1px solid #DCDCDC;
+      border-right: 1px solid #DCDCDC;
+      width: 100%; }
+      .product2_container .function2 h2:nth-child(1) a {
+        border: 0; }
+        .product2_container .function2 h2:nth-child(1) a:hover {
+          border-bottom: 8px solid #AA0601; }
+      .product2_container .function2 h2:nth-child(2) a {
+        border-bottom: 8px solid #AA0601; }
+      .product2_container .function2 h2 a {
+        padding: 24px 0;
+        color: #000000;
+        display: block; }
+        .product2_container .function2 h2 a:hover {
+          background-color: #AA0601;
+          border-bottom: 8px solid #AA0601; }
+
+.picture3 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 296px; }
+
+.picture4 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 296px; }
+
+.product2 {
+  text-align: center; }
+  .product2 h2 {
+    font-size: 42px;
+    line-height: 63px; }
+  .product2 h3 {
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 32px; }
+  .product2 .glasses2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .product2 .glasses2 li {
+      width: 33.3333%;
+      padding: 0 12px;
+      padding-bottom: 80px; }
+      .product2 .glasses2 li img {
+        width: 100%; }
+      .product2 .glasses2 li .productInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .product2 .glasses2 li .productInfo p {
+          font-size: 24px;
+          line-height: 36px; }
+          .product2 .glasses2 li .productInfo p:nth-child(2) {
+            color: #AA0601; }
+      .product2 .glasses2 li .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .product2 .glasses2 li .color1 {
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px;
+        margin-right: 8px; }
+      .product2 .glasses2 li .color2 {
+        width: 24px;
+        height: 24px;
+        background-color: #B75929;
+        border-radius: 4px; }
+
+.page2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px; }
+  .page2 p {
+    border: 1px solid #555555; }
+    .page2 p:nth-child(1) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .page2 p:nth-child(3) {
+      background-color: #000000; }
+      .page2 p:nth-child(3) a {
+        color: #FFFFFF; }
+    .page2 p:nth-child(7) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .page2 p a {
+      display: block;
+      color: #555555;
+      padding: 12px 16px;
+      font-size: 18px;
+      line-height: 24px; }
+      .page2 p a:hover {
+        background-color: #000000;
+        color: #FFFFFF; }
+
+@media (max-width: 992px) {
+  .product2_container .function2 h2 a {
+    padding: 16px 0; }
+  .product2 .glasses2 {
+    padding: 0 24px; }
+    .product2 .glasses2 li {
+      padding-bottom: 40px;
+      width: 50%; }
+  .page2 {
+    padding-top: 40px; } }
+
+@media (max-width: 767px) {
+  .product2_container .function2 h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .product2_container .function2 h3 {
+    font-size: 24px;
+    line-height: 36px; }
+  .picture {
+    padding-bottom: 40px; }
+  .picture3 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true); }
+  .picture4 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true); }
+  .product2 h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .product2 h3 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 24px; }
+  .product2 .glasses2 {
+    padding: 0; }
+    .product2 .glasses2 li {
+      padding-bottom: 24px;
+      width: 100%; }
+  .page2 {
+    padding-bottom: 64px; }
+    .page2 p {
+      font-size: 16px;
+      line-height: 22px; } }
+
 .container {
   text-align: left;
   padding-bottom: 32px; }
-  .container h1 {
+  .container h2 {
     padding-top: 96px;
     font-size: 48px;
     line-height: 72px;
     font-weight: bold; }
-    .container h1::before {
+    .container h2::before {
       padding-left: 16px;
       content: "";
       border-left: 5px solid #9F1213; }
@@ -858,7 +1196,7 @@ a {
     width: 50%; } }
 
 @media (max-width: 767px) {
-  .container h1 {
+  .container h2 {
     font-size: 24px;
     line-height: 36px;
     padding-top: 40px; }
@@ -878,12 +1216,12 @@ a {
   text-align: left;
   padding: 0 15px;
   padding-bottom: 32px; }
-  .store2_container h1 {
+  .store2_container h2 {
     padding-top: 96px;
     font-size: 48px;
     line-height: 72px;
     font-weight: bold; }
-    .store2_container h1::before {
+    .store2_container h2::before {
       padding-left: 16px;
       content: "";
       border-left: 5px solid #9F1213; }
@@ -975,7 +1313,7 @@ a {
         height: 414px; } }
 
 @media (max-width: 767px) {
-  .store2_container h1 {
+  .store2_container h2 {
     padding-top: 40px;
     font-size: 24px;
     line-height: 36px; }
@@ -997,19 +1335,302 @@ a {
           padding: 0px;
           width: 100%; } }
 
+.blog_container {
+  Max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 36px; }
+
+.header {
+  background-color: #650300; }
+  .header .blog_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 15px; }
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .news li a {
+    padding: 13px 0;
+    padding-right: 48px;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF; }
+    .news li a:hover {
+      color: blue; }
+
+.search a {
+  color: #FFFFFF;
+  padding: 13px 0; }
+  .search a:hover {
+    color: blue; }
+  .search a span {
+    width: 30px;
+    height: 30px; }
+
+.blog h2 {
+  padding-top: 96px;
+  padding-bottom: 32px;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+  font-weight: bold; }
+  .blog h2::before {
+    padding-left: 16px;
+    content: "";
+    border-left: 5px solid #9F1213; }
+
+.blog_card {
+  padding-bottom: 124px; }
+  .blog_card li {
+    padding-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .blog_card li img {
+      width: 50%;
+      height: auto;
+      padding-right: 24px; }
+    .blog_card li .text {
+      width: 50%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .blog_card li .text .text_content h4 {
+        font-size: 32px;
+        line-height: 48px;
+        color: #650300; }
+      .blog_card li .text .text_content .time {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 16px; }
+        .blog_card li .text .text_content .time h5 {
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000; }
+        .blog_card li .text .text_content .time h6 {
+          font-size: 16px;
+          line-height: 24px; }
+      .blog_card li .text .text_content p {
+        font-size: 20px;
+        line-height: 30px; }
+        .blog_card li .text .text_content p span {
+          font-size: 20px;
+          line-height: 30px;
+          visibility: hidden; }
+      .blog_card li .text .more {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .blog_card li .text .more h3 {
+          font-size: 36px;
+          line-height: 54px;
+          color: #650300; }
+
+.blog_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px; }
+  .blog_page p {
+    border: 1px solid #555555; }
+    .blog_page p:nth-child(1) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .blog_page p:nth-child(3) {
+      background-color: #000000; }
+      .blog_page p:nth-child(3) a {
+        color: #FFFFFF; }
+    .blog_page p:nth-child(7) a {
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 26px; }
+    .blog_page p a {
+      display: block;
+      color: #555555;
+      padding: 12px 16px;
+      font-size: 18px;
+      line-height: 24px; }
+      .blog_page p a:hover {
+        background-color: #000000;
+        color: #FFFFFF; }
+
+@media (max-width: 992px) {
+  .blog h2 {
+    padding-top: 80px; }
+  .blog_card {
+    padding-bottom: 80px; }
+    .blog_card li {
+      padding-bottom: 24px; }
+      .blog_card li .text .text_content p span {
+        visibility: visible; }
+      .blog_card li .text .more {
+        display: none; } }
+
+@media (max-width: 767px) {
+  .header {
+    display: none; }
+  .blog_container {
+    padding: 0 15px; }
+  .blog h2 {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 36px; }
+  .blog_card {
+    padding-bottom: 64px; }
+    .blog_card li {
+      display: block; }
+      .blog_card li img {
+        width: 100%;
+        padding: 0; }
+      .blog_card li .text {
+        width: 100%; }
+        .blog_card li .text .text_content p {
+          display: none; }
+  .blog_page {
+    padding-bottom: 64px; } }
+
+.blog2_container {
+  Max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 36px; }
+
+.tag {
+  padding-top: 24px; }
+  .tag span {
+    font-size: 16px;
+    line-height: 24px; }
+    .tag span:nth-child(2) {
+      color: #AA0601; }
+    .tag span:nth-child(3) {
+      font-size: 24px;
+      line-height: 36px;
+      color: #AA0601;
+      padding: 8px 0; }
+    .tag span:nth-child(4) {
+      font-size: 24px;
+      line-height: 36px;
+      color: #AA0601; }
+
+.special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.valentine {
+  width: 68%;
+  padding-right: 24px; }
+  .valentine h2 {
+    font-size: 48px;
+    line-height: 72px; }
+  .valentine h4 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 16px; }
+  .valentine ul li {
+    padding-bottom: 40px; }
+    .valentine ul li img {
+      width: 100%;
+      padding-bottom: 8px; }
+  .valentine .share ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 16px; }
+    .valentine .share ul li {
+      padding-right: 16px;
+      padding-bottom: 0; }
+      .valentine .share ul li a {
+        font-size: 16px;
+        line-height: 24px;
+        color: #0A0A0A; }
+        .valentine .share ul li a img {
+          width: 24px;
+          height: 24px; }
+        .valentine .share ul li a:hover {
+          background-color: blue; }
+  .valentine .share .next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 80px; }
+    .valentine .share .next p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+.tags span {
+  font-size: 24px;
+  line-height: 36px;
+  padding-right: 24px;
+  color: #AA0601;
+  font-weight: bold; }
+
+.tags h3 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #AA0601;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .tags h3 span {
+    font-size: 32px;
+    line-height: 48px; }
+
 .question_container {
   Max-width: 1296px;
   margin: 0 auto;
   padding: 0 36px;
   padding-bottom: 80px; }
-  .question_container h1 {
+  .question_container h2 {
     padding-top: 96px;
     padding-bottom: 32px;
     font-size: 48px;
     line-height: 72px;
     color: #000000;
     font-weight: bold; }
-    .question_container h1::before {
+    .question_container h2::before {
       padding-left: 16px;
       content: "";
       border-left: 5px solid #9F1213; }
@@ -1034,7 +1655,7 @@ a {
   .question_container {
     padding: 0 15px;
     padding-bottom: 64px; }
-    .question_container h1 {
+    .question_container h2 {
       font-size: 24px;
       line-height: 36px;
       padding-top: 40px;
