@@ -1,5 +1,6 @@
 .container {
-    Max-width: 1296px;
+    Max-width: 1320px;
+    padding: 0 12px;
     text-align: center;
     margin: 0 auto;
 }
@@ -8,12 +9,16 @@ a {
     display: block;
 }
 
+img {
+    object-fit: cover;
+}
+
 .navbar {
     background-color: #AA0601;
 }
 
 .navcontainer {
-    Max-width: 1296px;
+    Max-width: 1320px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -85,7 +90,7 @@ a {
     padding-right: 32px;
 }
 
-.icon li a img:hover {
+.icon img:hover {
     border-radius: 10px;
     background-color: blue;
 }
@@ -180,8 +185,6 @@ a {
 
 @media (max-width: 992px) {
     .list {
-        padding-left: 36px;
-        padding-right: 36px;
 
         img {
             width: 40px;
@@ -214,11 +217,15 @@ a {
             flex-wrap: wrap;
 
             li {
-                padding: 12px 0px;
-                width: 48%;
+                width: 50%;
                 flex-grow: 1;
                 border: 1px solid #FFFFFF;
-                text-align: center;
+                padding: 0;
+
+                a {
+                    text-align: center;
+                    padding: 12px 0px;
+                }
             }
         }
     }
@@ -286,7 +293,6 @@ a {
 
 
     .policy {
-        border-top: 1px solid #FFFFFF;
         flex-direction: column;
         text-align: left;
         padding-top: 19px;

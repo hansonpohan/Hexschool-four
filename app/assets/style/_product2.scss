@@ -1,5 +1,5 @@
 .product2_container {
-    Max-width: 1296px;
+    Max-width: 1320px;
     text-align: center;
     margin: 0 auto;
 
@@ -7,37 +7,43 @@
         display: flex;
         justify-content: center;
 
-        h2 {
-            font-size: 32px;
-            line-height: 48px;
-            border-left: 1px solid #DCDCDC;
-            border-right: 1px solid #DCDCDC;
+
+        ul {
+            display: flex;
             width: 100%;
 
-            &:nth-child(1) {
-                a {
-                    border: 0;
+            li {
+                font-size: 32px;
+                line-height: 48px;
+                border-left: 1px solid #DCDCDC;
+                border-right: 1px solid #DCDCDC;
+                width: 100%;
 
-                    &:hover {
+                &:nth-child(1) {
+                    a {
+                        border: 0;
+
+                        &:hover {
+                            border-bottom: 8px solid #AA0601;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    a {
                         border-bottom: 8px solid #AA0601;
                     }
                 }
-            }
 
-            &:nth-child(2) {
                 a {
-                    border-bottom: 8px solid #AA0601;
-                }
-            }
+                    padding: 24px 0;
+                    color: #000000;
+                    display: block;
 
-            a {
-                padding: 24px 0;
-                color: #000000;
-                display: block;
-
-                &:hover {
-                    background-color: #AA0601;
-                    border-bottom: 8px solid #AA0601;
+                    &:hover {
+                        background-color: #AA0601;
+                        border-bottom: 8px solid #AA0601;
+                    }
                 }
             }
         }
@@ -174,9 +180,14 @@
 @media (max-width: 992px) {
     .product2_container {
         .function2 {
-            h2 {
-                a {
-                    padding: 16px 0;
+            ul {
+                li {
+                    font-size: 24px;
+                    line-height: 36px;
+
+                    a {
+                        padding: 16px 0;
+                    }
                 }
             }
         }
@@ -201,14 +212,20 @@
 @media (max-width: 767px) {
     .product2_container {
         .function2 {
-            h2 {
-                font-size: 24px;
-                line-height: 36px;
-            }
+            ul {
+                li {
+                    font-size: 16px;
+                    line-height: 24px;
 
-            h3 {
-                font-size: 24px;
-                line-height: 36px;
+                    a {
+                        padding: 16px 12px;
+                    }
+                }
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
             }
         }
     }
@@ -250,8 +267,11 @@
 
     .page2 {
         p {
-            font-size: 16px;
-            line-height: 22px;
+            a {
+                font-size: 16px;
+                line-height: 22px;
+                padding: 12px 15px;
+            }
         }
 
         padding-bottom: 64px;

@@ -1,4 +1,4 @@
-.container {
+.store1_container {
     text-align: left;
 
     h2 {
@@ -105,7 +105,7 @@
 }
 
 @media (max-width: 992px) {
-    .container {
+    .store1_container {
         padding: 0 15px;
     }
 
@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 767px) {
-    .container {
+    .store1_container {
         h2 {
             font-size: 24px;
             line-height: 36px;
