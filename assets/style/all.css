@@ -676,6 +676,8 @@ img {
       width: 100%;
       text-align: center;
       padding-bottom: 24px; }
+      .classic ul li:nth-child(2) {
+        margin: 0; }
   .design {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true); }
     .design ul {
@@ -749,8 +751,7 @@ img {
       padding-bottom: 24px; }
       .classic ul li:nth-child(2) {
         padding: 0;
-        padding-bottom: 24px;
-        margin: 0; }
+        padding-bottom: 24px; }
   .design h2 {
     font-size: 24px;
     line-height: 36px;
