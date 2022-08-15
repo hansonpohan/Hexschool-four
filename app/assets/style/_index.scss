@@ -339,6 +339,10 @@
             width: 100%;
             text-align: center;
             padding-bottom: 24px;
+
+            &:nth-child(2) {
+                margin: 0;
+            }
         }
     }
 
@@ -441,7 +445,6 @@
             &:nth-child(2) {
                 padding: 0;
                 padding-bottom: 24px;
-                margin: 0;
             }
         }
     }
