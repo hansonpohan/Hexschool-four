@@ -174,10 +174,6 @@ img {
 
 
 @media (max-width: 1326px) {
-    .container {
-        padding: 0 15px;
-    }
-
     .navbar {
         padding: 0 15px;
     }
@@ -235,7 +231,6 @@ img {
     }
 
     .container {
-        padding: 0px;
         flex-direction: column;
     }
 
@@ -252,7 +247,6 @@ img {
 
     .list {
         padding-top: 0;
-        padding-right: 0;
 
         ul:nth-child(1) {
             display: none;

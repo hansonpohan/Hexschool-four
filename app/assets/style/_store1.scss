@@ -1,4 +1,6 @@
 .store1_container {
+    max-width: 1320px;
+    margin: 0 auto;
     text-align: left;
 
     h2 {
@@ -100,6 +102,14 @@
             &:hover {
                 color: blue;
             }
+        }
+
+        .phone {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 0px;
+            color: #000000;
+            background-color: #FFFFFF;
         }
     }
 }

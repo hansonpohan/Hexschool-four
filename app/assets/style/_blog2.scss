@@ -7,21 +7,28 @@
 .tag {
     padding-top: 24px;
 
-    span {
-        font-size: 24px;
-        line-height: 36px;
-        color: #AA0601;
+    .link {
+        display: flex;
 
         &:nth-child(1) {
-            font-size: 16px;
-            line-height: 24px;
-            color: #0A0A0A;
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                color: #AA0601;
+
+                &:nth-child(1) {
+                    color: #0A0A0A;
+                }
+            }
         }
 
         &:nth-child(2) {
-            font-size: 16px;
-            line-height: 24px;
-            color: #AA0601;
+            a {
+                font-size: 24px;
+                line-height: 36px;
+                padding-right: 15px;
+                color: #AA0601;
+            }
         }
     }
 }
@@ -103,8 +110,11 @@
 }
 
 .tags {
+    .link {
+        display: flex;
+    }
 
-    span {
+    a {
         font-size: 24px;
         line-height: 36px;
         padding-right: 24px;
@@ -140,6 +150,7 @@
 @media (max-width: 767px) {
     .valentine {
         width: 100%;
+        padding: 0;
     }
 
     .tags {
